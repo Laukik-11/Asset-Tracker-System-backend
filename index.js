@@ -7,7 +7,10 @@ const mongoose = require("mongoose");
 
 const corsOptions = {
   credentials: true,
-  origin: "*",
+  origin: [
+    "http://localhost:3000",
+    "https://asset-tracker-system.onrender.com",
+  ],
 };
 app.use(cors(corsOptions));
 
